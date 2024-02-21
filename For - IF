@@ -1,0 +1,30 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int in = 0;
+        int out = 0;
+        int numero = 0;
+        
+        System.out.println("Digite a quantidade de numeros");
+        int quantidade = sc.nextInt();
+ 
+        
+        for (int i = 1; i <= quantidade; i++) {
+            
+        System.out.printf("Digite um numero %d °:",i ); 
+         numero = sc.nextInt();    
+            if (numero>=10 && numero <=20){
+            in = in+1;
+            }
+            else {
+            out = out+1;
+            }
+        }
+        System.out.println("In:"+in);
+        System.out.println("out"+out);
+        
+}
+}
