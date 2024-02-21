@@ -1,0 +1,48 @@
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+
+        
+        char continuar;
+        
+        do {
+        System.out.println("Digite um numero de 1 a 7:");
+        
+        int numero = sc.nextInt();
+        
+        if (numero == 1) {
+            System.out.println("Dia da semana:Domingo ");
+        } 
+        else if (numero == 2) {
+            System.out.println("Dia da semana:Segunda");
+        } 
+        else if (numero == 3) {
+            System.out.println("Dia da semana:Terca");
+        } 
+        else if (numero == 4) {
+            System.out.println("Dia da semana:Quarta");
+        } 
+        else if (numero == 5) {
+            System.out.println("Dia da semana:Quinta");
+        } 
+        else if (numero == 6) {
+            System.out.println("Dia da semana:Sexta");
+        } 
+        else if (numero == 7) {
+            System.out.println("Dia da semana:Sabado");
+        } 
+        else {
+            System.out.println("Numero invalido. Digite um numero de 1 a 7.");
+        } 
+           
+            
+        System.out.println("Deseja verificar outro dia da semana? (s/n)");
+        continuar = sc.next().charAt(0);
+        
+            } while (continuar == 's' || continuar == 'S');
+        }
+    }
